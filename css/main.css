@@ -1,0 +1,33 @@
+:root {
+    --font-primary: "rama-gothic-m", sans-serif;
+    --font-secondary: soleil, sans-serif;
+    --font-third: 'Termina', sans-serif;
+    --color-purple: #7D3AFB;
+    --color-blue: #3B9DFF;
+    --color-hds: #583017;
+  }
+  
+html {
+  scroll-behavior: smooth;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+h1 {
+  color: white;
+  font-family: var(--font-primary);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  line-height: .8;
+}
+
+.home-banner {
+  background: linear-gradient(to right, #7D3AFB 50%, #3B9DFF);
+  height: 60vh;
+  position: relative;
+}
