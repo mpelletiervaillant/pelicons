@@ -8,42 +8,47 @@ layout: default
     </div> 
   </div>
 
-  <div class="wrapper pad-t-2">
-    <div class="grid grid-middle">
-      {% for icons in site.data.icons %}
-      <div class="unit xs-1-2 m-1-4 l-1-8">
-        <div>
-          <button id="myBtn">
-            <img class="img-flex island gutter" src="{{site.baseurl}}/images/icons/{{icons.png}}" alt="">
-          </button>
-        </div>
-<!-- The Modal -->
-        <div id="myModal" class="modal">
-<!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-              <div class="test-2">
-                   
-                <h2 class="icon-name uppercase white font-primary">{{icons.name}}</h2>
-
-                    <p class="white font-primary uppercase peta">White Icons</p>
-                    <a class="primary-btn font-secondary white ib" href="">SVG</a>
-                    <a class="primary-btn font-secondary white ib" href="">PNG</a>
-
-
-                    <p class="white font-primary uppercase peta">Black Icons</p>
-                <a id="test-4"class="primary-btn font-secondary white ib" href="">SVG</a>
-                <a class="primary-btn font-secondary white ib" href="">PNG</a>
-                  <img id="test" class="img-flex island-2 filter test" src="{{site.baseurl}}/images/icons/{{icons.svg}}" alt="">
-
-
-
-
-                </div>
-
-              </div>
+  <!-- <div class="wrapper pad-t-2">
+    <div class="grid grid-middle"> -->
+        {% for icons in site.data.icons %}
+        <li>
+            <a href="#" class="show-message">
+              {{ icons.name }}, click me to see something
+            </a>
+            <div class="modal hide"> My favorite music is {{icons.name}}</div>
+          </li>
+          {% endfor %}
+        <!-- {% for icons in site.data.icons %}
+        <div class="unit xs-1-2 m-1-4 l-1-8">
+            <div>
+              <button id="myBtn">
+                <img class="img-flex island gutter" src="{{site.baseurl}}/images/icons/{{icons.png}}" alt="">
+              </button>
             </div>
-          </div>
-      {% endfor %} 
-    </div>
-  </div>
+            <div class="show-message">
+              <div class="modal-content">
+                  <div class="test-2">
+                       
+                    <h2 class="icon-name uppercase white font-primary">{{icons.name}}</h2>
+    
+                        <p class="white font-primary uppercase peta">White Icons</p>
+                        <a class="primary-btn font-secondary white ib" href="">SVG</a>
+                        <a class="primary-btn font-secondary white ib" href="">PNG</a>
+    
+    
+                        <p class="white font-primary uppercase peta">Black Icons</p>
+                    <a id="test-4"class="primary-btn font-secondary white ib" href="">SVG</a>
+                    <a class="primary-btn font-secondary white ib" href="">PNG</a>
+                      <img id="test" class="img-flex island-2 filter test" src="{{site.baseurl}}/images/icons/{{icons.svg}}" alt="">
+    
+    
+    
+    
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+              {% endfor %} -->
+    <!-- </div>
+  </div> -->

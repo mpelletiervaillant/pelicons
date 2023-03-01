@@ -1,11 +1,11 @@
-- name: suit-case-2
-  png: suit-case-2.png
-  svg: suit-case-2.svg
-  
 - name: Suit Case 1
   png: suit-case-1.png
   svg: suit-case-1.svg
 
-- name: suit-case-3
+- name: Suit Case 2
+  png: suit-case-21.png
+  svg: suit-case-2.svg
+
+- name: Suit Case 3
   png: suit-case-3.png
   svg: suit-case-3.svg
