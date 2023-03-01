@@ -6,6 +6,13 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $("span.close").on("click", function () {
+      console.log("clicked");
+      $(this.parentNode).addClass('hide');
+  });
+});
+
 // // Get the modal
 // var modal = document.getElementById("myModal");
 
