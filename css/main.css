@@ -30,14 +30,6 @@ h1 {
   line-height: .8;
 }
 
-.filter {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-}
-
-.black-btn:hover img .filter {
-  filter: none;
-}
-
 .primary-btn {
   border: 1px solid white;
   padding: 1em 3.5em .8em;
@@ -46,19 +38,11 @@ h1 {
   transition: all .2s ease-in-out;
 }
 
-/* .hide {
-  display: none;
-} */
-
-
 .primary-btn:hover {
   background-color: white;
   color: var(--color-blue);
 }
 
-#test-4:hover ~ #test {
-  filter: none;
-}
 
 .icon-name {
   font-size: 7rem;
@@ -88,15 +72,6 @@ h1 {
   margin: 0 1em;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-}
-
-button:hover {
-  background-color: lightgray;
-}
-
 /* The Modal (background) */
 .modal {
   position: relative; /* Stay in place */
@@ -113,16 +88,15 @@ button:hover {
 
 /* Modal Content */
 .modal-content {
-  background: blue;
+  background: linear-gradient(to right, #7D3AFB 30%, #3B9DFF);
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 80%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 70vh;
+  filter: drop-shadow(0px 0px 175px black);
 }
 
 
